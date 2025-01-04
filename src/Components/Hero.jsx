@@ -1,9 +1,9 @@
-import { FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
-import My_Img from "../assets/images.webp";
+import { FaEnvelope, FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
+import My_Img from "../assets/my_img.jpg";
 
 export default function Hero() {
   return (
-    <div className="py-14 px-6 md:px-16 bg-gray-50 my-16">
+    <div className="py-14 px-6 md:px-16 bg-gray-50">
       <div className="md:flex justify-between items-center space-y-8 md:space-y-0">
         {/* Left Section */}
         <div className="flex-1">
@@ -18,7 +18,15 @@ export default function Hero() {
               href="https://github.com/yourusername"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-3xl text-gray-700 hover:text-blue-500 transition duration-300"
+              className="text-3xl text-gray-700 hover:text-red-500 transition duration-300"
+            >
+              <FaEnvelope />
+            </a>
+            <a
+              href="https://github.com/yourusername"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-3xl text-gray-700 hover:text-gray-900 transition duration-300"
             >
               <FaGithub />
             </a>
@@ -29,14 +37,6 @@ export default function Hero() {
               className="text-3xl text-gray-700 hover:text-blue-500 transition duration-300"
             >
               <FaLinkedin />
-            </a>
-            <a
-              href="https://twitter.com/yourusername"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-3xl text-gray-700 hover:text-blue-500 transition duration-300"
-            >
-              <FaTwitter />
             </a>
             <a
               href="https://facebook.com/yourusername"

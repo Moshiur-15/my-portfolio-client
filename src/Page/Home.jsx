@@ -1,5 +1,6 @@
 import About from "../Components/About";
 import Hero from "../Components/Hero";
+import Projects from "../Components/Projects";
 import Skills from "../Components/Skills";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
         <Hero/>
         <About />
         <Skills />
+        <Projects/>
     </div>
   )
 }

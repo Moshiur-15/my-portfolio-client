@@ -5,7 +5,7 @@ import Footer from "../Components/Footer";
 export default function MainLayout() {
   return (
     <div className="min-h-screen font-roboto">
-      <div className="sticky z-80 top-0">
+      <div className="sticky z-10 top-0">
         <NavBer/>
       </div>
       <div className="container mx-auto lg:px-48 mb-20">
