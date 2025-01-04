@@ -8,7 +8,7 @@ export default function MainLayout() {
       <div className="sticky z-80 top-0">
         <NavBer/>
       </div>
-      <div className="container mx-auto lg:px-48">
+      <div className="container mx-auto lg:px-48 mb-20">
         <Outlet />
       </div>
       <div className="">
