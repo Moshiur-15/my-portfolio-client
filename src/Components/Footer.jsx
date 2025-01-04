@@ -9,11 +9,11 @@ export default function Footer() {
   const linkStyle = "text-gray-500 hover:text-blue-500 transition";
 
   return (
-    <footer className="bg-gray-800 text-gray-300 py-12 text-center">
+    <footer className="bg-blue-100 text-gray-800 py-12 text-center">
       <div className="container mx-auto px-4">
         {/* Contact Section */}
         <div className="text-center py-2">
-          <h3 className="text-xl font-bold text-white mb-6">Contact Us</h3>
+          <h3 className="text-xl font-bold text-black mb-6">Contact Us</h3>
           <div className="text-center space-y-6">
             <div className="flex justify-center space-x-6">
               <a
@@ -34,7 +34,7 @@ export default function Footer() {
                 <FaGithub className="w-6 h-6 hover:text-gray-900" />
               </a>
               <a
-                href="https://linkedin.com/"
+                href="https://www.linkedin.com/feed/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
@@ -43,7 +43,7 @@ export default function Footer() {
                 <FaLinkedin className="w-6 h-6" />
               </a>
               <a
-                href="https://facebook.com/"
+                href="https://www.facebook.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
@@ -57,7 +57,7 @@ export default function Footer() {
       </div>
       <hr className="my-8 border-gray-700" />
       {/* Copyright */}
-      <div className="text-sm text-gray-400">
+      <div className="text-sm text-gray-900">
         <p>
           &copy; {new Date().getFullYear()} Moshiur Islam. All rights reserved.
         </p>

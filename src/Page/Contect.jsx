@@ -121,11 +121,42 @@ export default function Contect() {
             {/* Right Side - Social Links */}
             <div className="text-center mt-6">
               <div className="border border-gray-400/60 mb-5"></div>
-              <div className="flex justify-start items-center space-x-6">
-                <FaEnvelope className="text-red-500 text-3xl cursor-pointer hover:text-red-600 transition" />
-                <FaFacebook className="text-blue-600 text-3xl cursor-pointer hover:text-blue-700 transition" />
-                <FaLinkedin className="text-blue-500 text-3xl cursor-pointer hover:text-blue-700 transition" />
-                <FaGithub className="text-gray-700 text-3xl cursor-pointer hover:text-black transition" />
+              <div className="flex space-x-6 mt-6">
+                {/* Email */}
+                <a
+                  href="mailto:youremail@example.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaEnvelope className="text-red-500 text-3xl cursor-pointer hover:text-red-600 transition" />
+                </a>
+
+                {/* Facebook */}
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaFacebook className="text-blue-600 text-3xl cursor-pointer hover:text-blue-700 transition" />
+                </a>
+
+                {/* LinkedIn */}
+                <a
+                  href="https://www.linkedin.com/feed/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedin className="text-blue-500 text-3xl cursor-pointer hover:text-blue-700 transition" />
+                </a>
+
+                {/* GitHub */}
+                <a
+                  href="https://github.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGithub className="text-gray-700 text-3xl cursor-pointer hover:text-black transition" />
+                </a>
               </div>
             </div>
           </div>
