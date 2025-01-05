@@ -1,13 +1,10 @@
 import { useState } from "react";
-import { NavLink, useLocation } from "react-router-dom";
 import { BiMenuAltLeft } from "react-icons/bi";
 import { IoMdClose } from "react-icons/io";
 import Logo from "../assets/Mo-logo.png";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
-  const location = useLocation();
-
   const toggleDropdown = () => setIsOpen(!isOpen);
   const closeDropdown = () => setIsOpen(false);
 
@@ -31,7 +28,7 @@ export default function NavBar() {
               className="btn bg-blue-200/40 border-none rounded-none text-xl m-1"
               onClick={toggleDropdown}
             >
-              {isOpen ? <IoMdClose /> : <BiMenuAltLeft />}
+              {isOpen ? <IoMdClose className="text-2xl" /> : <BiMenuAltLeft className="text-2xl"/>}
             </label>
 
             {isOpen && (
@@ -39,39 +36,33 @@ export default function NavBar() {
                 tabIndex={0}
                 className="dropdown-content menu p-4 shadow bg-blue-50 rounded-md w-60"
               >
-                <NavLink
-                  className="text-lg font-semibold text-gray-800 hover:bg-blue-100 py-2 px-4 rounded-md transition-colors"
-                  to="/"
-                  onClick={closeDropdown}
-                >
-                  Home
-                </NavLink>
-                {location.pathname === "/" && (
-                  <>
-                    <li onClick={() => handleScroll("about")}>
-                      <a className="text-lg font-semibold text-gray-800 hover:bg-blue-100 py-2 px-4 rounded-md transition-colors">
-                        About
-                      </a>
-                    </li>
-                    <li onClick={() => handleScroll("skills")}>
-                      <a className="text-lg font-semibold text-gray-800 hover:bg-blue-100 py-2 px-4 rounded-md transition-colors">
-                        Skills
-                      </a>
-                    </li>
-                    <li onClick={() => handleScroll("projects")}>
-                      <a className="text-lg font-semibold text-gray-800 hover:bg-blue-100 py-2 px-4 rounded-md transition-colors">
-                        Projects
-                      </a>
-                    </li>
-                  </>
-                )}
-                <NavLink
-                  className="text-lg font-semibold text-gray-800 hover:bg-blue-100 py-2 px-4 rounded-md transition-colors"
-                  to="/contact"
-                  onClick={closeDropdown}
-                >
-                  Contact
-                </NavLink>
+                <>
+                  <li onClick={() => handleScroll("hero")}>
+                    <a className="text-lg font-semibold text-gray-800 hover:bg-blue-100 py-2 px-4 rounded-md transition-colors">
+                      Hero
+                    </a>
+                  </li>
+                  <li onClick={() => handleScroll("about")}>
+                    <a className="text-lg font-semibold text-gray-800 hover:bg-blue-100 py-2 px-4 rounded-md transition-colors">
+                      About
+                    </a>
+                  </li>
+                  <li onClick={() => handleScroll("skills")}>
+                    <a className="text-lg font-semibold text-gray-800 hover:bg-blue-100 py-2 px-4 rounded-md transition-colors">
+                      Skills
+                    </a>
+                  </li>
+                  <li onClick={() => handleScroll("projects")}>
+                    <a className="text-lg font-semibold text-gray-800 hover:bg-blue-100 py-2 px-4 rounded-md transition-colors">
+                      Projects
+                    </a>
+                  </li>
+                  <li onClick={() => handleScroll("contact")}>
+                    <a className="text-lg font-semibold text-gray-800 hover:bg-blue-100 py-2 px-4 rounded-md transition-colors">
+                      Contact
+                    </a>
+                  </li>
+                </>
               </ul>
             )}
           </div>

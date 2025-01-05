@@ -4,7 +4,6 @@ import {
   FaPhone,
   FaFacebook,
   FaLinkedin,
-  FaGithub,
 } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
@@ -39,8 +38,8 @@ export default function Contect() {
 
   return (
     <section className="py-12 px-2">
-      <h2 className="text-4xl uppercase font-bold text-gray-800 text-center mb-8">
-        Contact Us
+      <h2 className="text-4xl uppercase font-bold text-gray-800 text-center mb-16">
+        Contact Me
       </h2>
 
       <div className="max-w-6xl mx-auto grid xl:grid-cols-2 gap-12 items-center">
@@ -138,17 +137,19 @@ export default function Contect() {
                   </span>
                   <div>
                     <h4 className="text-lg font-bold text-gray-800">Phone</h4>
-                    <p className="text-gray-600">+880132702639</p>
+                    <p className="text-gray-600">+8801327023639</p>
                     <p className="text-gray-600">+8801615209724</p>
                   </div>
                 </li>
                 <li className="flex items-start">
                   <span className="text-green-500 text-2xl mr-4">
-                  <FaWhatsapp className="text-3xl" />
+                    <FaWhatsapp className="text-3xl" />
                   </span>
                   <div>
-                    <h4 className="text-lg font-bold text-gray-800">Whatsapp</h4>
-                    <p className="text-gray-600">+880132702639</p>
+                    <h4 className="text-lg font-bold text-gray-800">
+                      Whatsapp
+                    </h4>
+                    <p className="text-gray-600">+8801327023639</p>
                   </div>
                 </li>
                 <li className="flex items-start">
@@ -159,7 +160,9 @@ export default function Contect() {
                     <h4 className="text-lg font-bold text-gray-800">
                       Location
                     </h4>
-                    <p className="text-gray-600">Patuakhali, Bangladesh</p>
+                    <p className="text-gray-600 w-max">
+                      Patuakhali, Bangladesh
+                    </p>
                   </div>
                 </li>
               </ul>
@@ -178,14 +181,15 @@ export default function Contect() {
                   <FaEnvelope className="text-red-500 text-3xl cursor-pointer hover:text-red-600 transition" />
                 </a>
 
-                {/* GitHub */}
+                {/* WhatsApp */}
                 <a
-                  href="https://github.com/"
+                  href="https://wa.me/+8801327023639"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaGithub className="text-gray-700 text-3xl cursor-pointer hover:text-black transition" />
+                  <FaWhatsapp className="text-green-500 text-3xl cursor-pointer hover:text-green-600 transition" />
                 </a>
+
                 {/* Facebook */}
                 <a
                   href="https://www.facebook.com/"

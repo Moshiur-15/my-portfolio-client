@@ -14,7 +14,7 @@ export default function Hero() {
           {/* Social Links */}
           <div className="flex space-x-6 my-6">
             <a
-              href="https://github.com/yourusername"
+              href="mailto:masiurislam28@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
               className="text-3xl text-gray-700 hover:text-red-500 transition duration-300"

@@ -5,94 +5,100 @@ import bd_coupon from "../assets/bd-coupon.png";
 
 export default function Projects() {
   return (
-    <section className="my-10 ">
-      <h2 className="text-3xl font-bold text-gray-800 text-center mb-6">
+    <section className="my-10">
+      <h2 className="text-3xl font-bold text-gray-800 text-center mb-2">
         My Projects
       </h2>
       <p className="text-gray-600 text-center mb-10">
         Here are a few projects I’ve worked on recently.
       </p>
 
-      <div className="grid grid-cols-1 gap-10 px-3">
-        {/* Project 1 */}
-        <div
-          id="Project1"
-          className="max-h-[350px] group bg-white shadow-lg rounded-lg  hover:shadow-xl md:flex"
-        >
-          <div className="md:w-1/2 overflow-hidden">
+      <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 px-3">
+        <div className="mx-auto bg-white rounded-lg shadow-lg overflow-hidden mb-8 md:mb-0 flex flex-col">
+          {/* Header Section */}
+          <div className="h-48 bg-cover bg-center">
             <img
               src={blog}
               alt="Project 1"
-              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              className="w-full h-full object-fill transition-transform duration-300 group-hover:scale-105"
             />
           </div>
-          <div className="p-6 md:w-1/2 bg-blue-50">
-            <h3 className="text-xl md:text-3xl font-semibold text-gray-900 hover:text-gray-700 transition duration-200">
-              Blog Website
-            </h3>
-            <p className="text-gray-600 my-6 text-base lg:text-xl">
-              A responsive blog platform with features like authentication, blog
-              creation, commenting, and a wishlist, built using React, Firebase,
-              and MongoDB.
+
+          {/* Content Section */}
+          <div className="p-6 flex flex-col justify-between flex-grow">
+            <h2 className="text-xl font-bold mb-2">Blog Website</h2>
+            <p className="text-gray-600">
+              A responsive blog platform built with React, Firebase, and
+              MongoDB, featuring authentication, blog creation, commenting, and
+              a wishlist for an engaging user experience.
             </p>
 
-            <Link
-              to="/productDetail"
-              className="mt-8 px-6 py-3 rounded-md font-semibold transition duration-300 uppercase text-sm border border-blue-400"
-            >
-              View Details
-            </Link>
+            {/* Button */}
+            <div className="mt-4">
+              <Link
+                to="/productDetail"
+                className="px-6 py-3 bg-blue-200 rounded-md hover:bg-blue-400/70 transition duration-300 uppercase"
+              >
+                VIEW DETAILS
+              </Link>
+            </div>
           </div>
         </div>
 
-        <div className="max-h-[350px] group bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl md:flex">
-          <div className="p-6 md:w-1/2 bg-blue-50">
-            <h3 className="text-xl md:text-3xl font-semibold text-gray-900 hover:text-gray-700 transition duration-200">
-            Chill Gamer
-            </h3>
-            <p className="text-gray-600 my-6 text-base lg:text-xl">
-            Chill Gamer is a React, Firebase, and MongoDB-based game review app with features like user authentication, review submission, ratings, wishlisting, and personalized recommendations.
-            </p>
-
-            <Link
-              to="/productDetail2"
-              className="mt-8 px-6 py-3 rounded-md font-semibold transition duration-300 uppercase text-sm border border-blue-400"
-            >
-              View Details
-            </Link>
-          </div>
-          <div className="md:w-1/2">
+        <div className="mx-auto bg-white rounded-lg shadow-lg overflow-hidden mb-8 md:mb-0 flex flex-col">
+          {/* Header Section */}
+          <div className="h-48 bg-cover bg-center">
             <img
               src={game}
               alt="Project 1"
-              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              className="w-full h-full object-fill transition-transform duration-300 group-hover:scale-105"
             />
+          </div>
+
+          {/* Content Section */}
+          <div className="p-6 flex flex-col justify-between flex-grow">
+            <h2 className="text-xl font-bold mb-2">Chill Gamer</h2>
+            <p className="text-gray-600">
+              Chill Gamer is a game review app built with React, Firebase, and
+              MongoDB, featuring user authentication, review submissions.
+            </p>
+
+            <div className="mt-4">
+              <Link
+                to="/productDetail2"
+                className="px-6 py-3 bg-blue-200 rounded-md hover:bg-blue-400/70 transition duration-300 uppercase"
+              >
+                VIEW DETAILS
+              </Link>
+            </div>
           </div>
         </div>
 
-        <div className="max-h-[350px] group bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl md:flex">
-          <div className="md:w-1/2">
+        <div className="mx-auto bg-white rounded-lg shadow-lg overflow-hidden mb-8 md:mb-0 flex flex-col">
+          <div className="h-48 bg-cover bg-center">
             <img
               src={bd_coupon}
-              alt="Discount PRO Project"
-              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              alt="Project 1"
+              className="w-full h-full object-fill transition-transform duration-300 group-hover:scale-105"
             />
           </div>
-          <div className="p-6 md:w-1/2 bg-blue-50">
-            <h3 className="text-xl md:text-3xl font-semibold text-gray-900 hover:text-gray-700 transition duration-200">
-              BD Coupon
-            </h3>
-            <p className="text-gray-600 my-6 text-base lg:text-xl">
+
+          <div className="p-6 flex flex-col justify-between flex-grow">
+            <h2 className="text-xl font-bold mb-2">BD Coupon</h2>
+            <p className="text-gray-600">
               A user-friendly application that allows users to find and use
               discount coupons for popular e-commerce brands in Bangladesh.
             </p>
 
-            <Link
-              to="/productDetail3"
-              className="mt-8 px-6 py-3 rounded-md font-semibold transition duration-300 uppercase text-sm border border-blue-400"
-            >
-              View Details
-            </Link>
+            {/* Button */}
+            <div className="mt-4">
+              <Link
+                to="/productDetail3"
+                className="px-6 py-3 bg-blue-200 rounded-md hover:bg-blue-400/70 transition duration-300 uppercase"
+              >
+                VIEW DETAILS
+              </Link>
+            </div>
           </div>
         </div>
       </div>

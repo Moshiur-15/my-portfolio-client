@@ -30,7 +30,6 @@ export default function ProjectDetail3() {
           <li className="text-lg text-gray-700">React</li>
           <li className="text-lg text-gray-700">Firebase Authentication</li>
           <li className="text-lg text-gray-700">Tailwind CSS</li>
-          <li className="text-lg text-gray-700">MongoDB</li>
           <li className="text-lg text-gray-700">React Router</li>
           <li className="text-lg text-gray-700">React Copy to Clipboard</li>
         </ul>

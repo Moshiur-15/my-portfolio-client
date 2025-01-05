@@ -5,7 +5,7 @@ export default function Skills() {
         My Skills
       </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8">
         {/* Frontend Skills */}
         <div className="bg-blue-50 shadow-lg p-6 rounded-lg border-2 border-transparent hover:border-blue-300 transition-all duration-200">
           <h3 className="text-2xl font-semibold text-gray-800 mb-4">
