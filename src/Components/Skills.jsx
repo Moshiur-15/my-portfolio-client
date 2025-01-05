@@ -7,7 +7,7 @@ export default function Skills() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {/* Frontend Skills */}
-        <div className="bg-blue-50 p-6 rounded-lg border-2 border-transparent hover:border-blue-300 transition-all duration-200">
+        <div className="bg-blue-50 shadow-lg p-6 rounded-lg border-2 border-transparent hover:border-blue-300 transition-all duration-200">
           <h3 className="text-2xl font-semibold text-gray-800 mb-4">
             Frontend
           </h3>
@@ -21,7 +21,7 @@ export default function Skills() {
         </div>
 
         {/* Backend Skills */}
-        <div className="bg-blue-50 p-6 rounded-lg border-2 border-transparent hover:border-blue-300 transition-all duration-200">
+        <div className="bg-blue-50 shadow-lg p-6 rounded-lg border-2 border-transparent hover:border-blue-300 transition-all duration-200">
           <h3 className="text-2xl font-semibold text-gray-800 mb-4">Backend</h3>
           <ul className="space-y-2 text-lg text-gray-600">
             <li>- MongoDB (intermediate)</li>
@@ -31,7 +31,7 @@ export default function Skills() {
         </div>
 
         {/* Other Skills */}
-        <div className="bg-blue-50 p-6 rounded-lg border-2 border-transparent hover:border-blue-300 transition-all duration-200">
+        <div className="bg-blue-50 shadow-lg p-6 rounded-lg border-2 border-transparent hover:border-blue-300 transition-all duration-200">
           <h3 className="text-2xl font-semibold text-gray-800 mb-4">Others</h3>
           <ul className="space-y-2 text-lg text-gray-600">
             <li>- Firebase</li>

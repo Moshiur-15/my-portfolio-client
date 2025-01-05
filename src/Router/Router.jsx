@@ -3,6 +3,8 @@ import MainLayout from "../layout/MainLayout";
 import Home from "../Page/Home";
 import Contect from "../Page/Contect";
 import ProjectDetail from "../Components/ProjectDetail";
+import ProjectDetail3 from "../Components/ProjectDetail3";
+import ProjectDetail2 from "../Components/ProjectDetail2";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -20,6 +22,16 @@ const router = createBrowserRouter([
       {
         path: "/productDetail",
         element: <ProjectDetail/>,
+      }
+      ,
+      {
+        path: "/productDetail2",
+        element: <ProjectDetail2/>,
+      }
+      ,
+      {
+        path: "/productDetail3",
+        element: <ProjectDetail3/>,
       }
     ]
   },

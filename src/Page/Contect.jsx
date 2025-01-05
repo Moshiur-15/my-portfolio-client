@@ -1,4 +1,4 @@
-import { FaArrowRightLong, FaLocationDot } from "react-icons/fa6";
+import { FaArrowRightLong, FaLocationDot, FaWhatsapp } from "react-icons/fa6";
 import {
   FaEnvelope,
   FaPhone,
@@ -6,8 +6,37 @@ import {
   FaLinkedin,
   FaGithub,
 } from "react-icons/fa";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
+import Swal from "sweetalert2";
 
 export default function Contect() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_etvjk7k", "template_62npc1b", form.current, {
+        publicKey: "3eOT6dB9zWU0c1M1F",
+      })
+      .then(
+        (res) => {
+          console.log("SUCCESS!");
+          console.log(res);
+          form.current.reset();
+          Swal.fire({
+            title: "Message Sent!",
+            text: "Your message has been successfully sent.",
+            icon: "success",
+          });
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
+
   return (
     <section className="py-12 px-2">
       <h2 className="text-4xl uppercase font-bold text-gray-800 text-center mb-8">
@@ -16,7 +45,11 @@ export default function Contect() {
 
       <div className="max-w-6xl mx-auto grid xl:grid-cols-2 gap-12 items-center">
         {/* Left Side */}
-        <form className="p-10 rounded-lg shadow-lg bg-blue-50 h-full">
+        <form
+          ref={form}
+          onSubmit={sendEmail}
+          className="p-10 rounded-lg shadow-lg bg-blue-50 h-full"
+        >
           {/* Full Name */}
           <div className="mb-6">
             <label
@@ -28,8 +61,9 @@ export default function Contect() {
             <input
               type="text"
               id="fullName"
+              name="from_name"
               placeholder="Enter Your Name"
-              className="w-full px-4 py-3 rounded-lg bg-gray-200 text-gray-200 placeholder-gray-400 border border-gray-600 focus:outline-none border-none"
+              className="w-full px-4 py-3 rounded-lg bg-gray-200  placeholder-gray-400 border border-gray-600 focus:outline-none border-none"
             />
           </div>
 
@@ -42,10 +76,11 @@ export default function Contect() {
               EMAIL ADDRESS <span className="text-red-500">*</span>
             </label>
             <input
+              name="from_email"
               type="email"
               id="email"
               placeholder="Enter Yoyr Email"
-              className="w-full px-4 py-3 rounded-lg bg-gray-200 text-gray-200 placeholder-gray-400 border border-gray-600 focus:outline-none border-none"
+              className="w-full px-4 py-3 rounded-lg bg-gray-200  placeholder-gray-400 border border-gray-600 focus:outline-none border-none"
             />
           </div>
 
@@ -58,16 +93,18 @@ export default function Contect() {
               MESSAGE <span className="text-red-500">*</span>
             </label>
             <textarea
+              name="message"
               id="message"
               rows="4"
               placeholder="Write your message here..."
-              className="w-full px-4 py-3 rounded-lg bg-gray-200 text-gray-200 placeholder-gray-400 border border-gray-600 focus:outline-none border-none"
+              className="w-full px-4 py-3 rounded-lg bg-gray-200  placeholder-gray-400 border border-gray-600 focus:outline-none border-none"
             ></textarea>
           </div>
 
           {/* Submit Button */}
           <button
             type="submit"
+            value="Send"
             className="w-full font-medium py-4 border border-blue-300 rounded-full shadow-lg flex items-center justify-center gap-2"
           >
             <span>SEND MESSAGE</span>
@@ -92,7 +129,7 @@ export default function Contect() {
                   </span>
                   <div>
                     <h4 className="text-lg font-bold text-gray-800">Email</h4>
-                    <p className="text-gray-600">example@email.com</p>
+                    <p className="text-gray-600">masiurislam28@email.com</p>
                   </div>
                 </li>
                 <li className="flex items-start">
@@ -101,7 +138,17 @@ export default function Contect() {
                   </span>
                   <div>
                     <h4 className="text-lg font-bold text-gray-800">Phone</h4>
-                    <p className="text-gray-600">+880123456789</p>
+                    <p className="text-gray-600">+880132702639</p>
+                    <p className="text-gray-600">+8801615209724</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-500 text-2xl mr-4">
+                  <FaWhatsapp className="text-3xl" />
+                  </span>
+                  <div>
+                    <h4 className="text-lg font-bold text-gray-800">Whatsapp</h4>
+                    <p className="text-gray-600">+880132702639</p>
                   </div>
                 </li>
                 <li className="flex items-start">
@@ -112,7 +159,7 @@ export default function Contect() {
                     <h4 className="text-lg font-bold text-gray-800">
                       Location
                     </h4>
-                    <p className="text-gray-600">Dhaka, Bangladesh</p>
+                    <p className="text-gray-600">Patuakhali, Bangladesh</p>
                   </div>
                 </li>
               </ul>
@@ -124,13 +171,21 @@ export default function Contect() {
               <div className="flex space-x-6 mt-6">
                 {/* Email */}
                 <a
-                  href="mailto:youremail@example.com"
+                  href="mailto:masiurislam28@email.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FaEnvelope className="text-red-500 text-3xl cursor-pointer hover:text-red-600 transition" />
                 </a>
 
+                {/* GitHub */}
+                <a
+                  href="https://github.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGithub className="text-gray-700 text-3xl cursor-pointer hover:text-black transition" />
+                </a>
                 {/* Facebook */}
                 <a
                   href="https://www.facebook.com/"
@@ -147,15 +202,6 @@ export default function Contect() {
                   rel="noopener noreferrer"
                 >
                   <FaLinkedin className="text-blue-500 text-3xl cursor-pointer hover:text-blue-700 transition" />
-                </a>
-
-                {/* GitHub */}
-                <a
-                  href="https://github.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaGithub className="text-gray-700 text-3xl cursor-pointer hover:text-black transition" />
                 </a>
               </div>
             </div>

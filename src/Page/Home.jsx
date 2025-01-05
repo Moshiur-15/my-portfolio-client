@@ -6,10 +6,18 @@ import Skills from "../Components/Skills";
 export default function Home() {
   return (
     <div className="font-roboto">
-        <Hero/>
+      <section id="home">
+        <Hero />
+      </section>
+      <section id="about">
         <About />
+      </section>
+      <section id="skills">
         <Skills />
-        <Projects/>
+      </section>
+      <section id="projects">
+        <Projects />
+      </section>
     </div>
-  )
+  );
 }

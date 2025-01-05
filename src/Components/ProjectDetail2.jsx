@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
-import projectImg from "../assets/blog.png";
+import projectImg from "../assets/gamereviue.png";
 
-export default function ProjectDetail() {
-
+export default function ProjectDetail2() {
   return (
     <div className="max-w-4xl mx-auto p-8 bg-white shadow-xl rounded-xl mt-8">
       {/* Project Screenshot */}
@@ -16,20 +15,17 @@ export default function ProjectDetail() {
 
       {/* Header */}
       <h1 className="text-4xl font-bold text-gray-800 mb-6">
-        Blog Website Development Project
+        Chill Gamer - Game Review Application
       </h1>
       <p className="text-xl text-gray-600 mb-8">
-        The Blog Website project aims to create a dynamic, responsive platform
-        where users can read, comment on, and manage blog posts. Built using
-        React, Firebase, and MongoDB, it features user authentication, a blog
-        creation system, a wishlist, and a commenting functionality. The website
-        will offer a clean, user-friendly interface, ensuring smooth navigation
-        across all devices. As a front-end developer, you'll be responsible for
-        crafting intuitive and engaging user experiences, ensuring the website
-        performs well on mobile, tablet, and desktop devices. You'll work
-        alongside designers and back-end developers to bring the site to life,
-        implementing features like dynamic pages, user interaction, and smooth
-        transitions.
+        Chill Gamer is a game review application designed to help gamers explore
+        reviews, ratings, and details of popular games. Built with React,
+        Firebase, and MongoDB, it includes features such as user authentication,
+        game review submission, ratings, wishlisting, and personalized
+        recommendations. The platform provides a visually appealing and
+        responsive interface, making it easy for users to navigate and interact.
+        This project highlights the integration of dynamic content, user
+        interaction, and seamless transitions.
       </p>
 
       {/* Technologies Used */}
@@ -42,7 +38,6 @@ export default function ProjectDetail() {
           <li className="text-lg text-gray-700">Firebase</li>
           <li className="text-lg text-gray-700">MongoDB</li>
           <li className="text-lg text-gray-700">Tailwind CSS</li>
-          <li className="text-lg text-gray-700">Framer Motion</li>
         </ul>
       </div>
 
@@ -56,14 +51,14 @@ export default function ProjectDetail() {
             User Authentication (Email, Google, etc.)
           </li>
           <li className="text-lg text-gray-700">
-            Blog Management (Create, Update, Delete)
+            Game Reviews (Add, Edit, Delete Reviews)
           </li>
-          <li className="text-lg text-gray-700">Wishlist Functionality</li>
+          <li className="text-lg text-gray-700">Ratings and Wishlisting</li>
+          <li className="text-lg text-gray-700">
+            Personalized Recommendations based on user preferences
+          </li>
           <li className="text-lg text-gray-700">
             Responsive Design (Mobile, Tablet, Desktop)
-          </li>
-          <li className="text-lg text-gray-700">
-            Interactive User Interface (with Framer Motion)
           </li>
         </ul>
       </div>
@@ -74,22 +69,19 @@ export default function ProjectDetail() {
         </h2>
         <ul className="list-disc pl-6 space-y-2">
           <li className="text-lg text-gray-700">
-            Challenge 1: Integrating Firebase Authentication with the blog
-            features and handling various edge cases in user authentication.
+            Integrating Firebase Authentication and managing user sessions
+            across different features.
           </li>
           <li className="text-lg text-gray-700">
-            Challenge 2: Ensuring the responsiveness of the design across
-            multiple devices while maintaining a clean layout.
+            Optimizing database queries to ensure smooth fetching and filtering
+            of game reviews and ratings.
           </li>
           <li className="text-lg text-gray-700">
-            Challenge 3: Implementing a dynamic featured blog section to
-            highlight specific content based on popularity, recency, or admin
-            selection, while maintaining performance.
+            Designing a recommendation engine to suggest games based on user
+            preferences and activity.
           </li>
           <li className="text-lg text-gray-700">
-            Challenge 4: Building an intuitive search and sort functionality for
-            blog categories, with a clean and responsive dropdown/select menu
-            design.
+            Ensuring responsive design and seamless transitions across devices.
           </li>
         </ul>
       </div>
@@ -101,12 +93,12 @@ export default function ProjectDetail() {
         </h2>
         <ul className="list-disc pl-6 space-y-2">
           <li className="text-lg text-gray-700">
-            Shortcoming 1: Performance could be optimized for slower devices,
-            such as reducing the size of images and improving lazy loading.
+            Shortcoming: Performance could be improved for larger datasets,
+            especially in loading reviews and ratings.
           </li>
           <li className="text-lg text-gray-700">
-            Improvement 1: Adding an advanced search and filter option for blog
-            posts based on categories or tags.
+            Improvement: Adding advanced search filters (e.g., by genre,
+            platform) to make game discovery more efficient.
           </li>
         </ul>
       </div>
@@ -122,7 +114,7 @@ export default function ProjectDetail() {
 
         {/* Live Link Button */}
         <a
-          href="https://nextera-blog-me.netlify.app/"
+          href="https://game-review-me.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-green-500 text-white px-8 py-4 rounded-lg hover:bg-green-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
@@ -132,7 +124,7 @@ export default function ProjectDetail() {
 
         {/* View Code on GitHub Button */}
         <a
-          href="https://github.com/programming-hero-web-course2/b10a11-client-side-Moshiur-15"
+          href="https://github.com/programming-hero-web-course2/b10-a10-client-side-Moshiur-15"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-gray-800 text-white px-8 py-4 rounded-lg hover:bg-gray-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
