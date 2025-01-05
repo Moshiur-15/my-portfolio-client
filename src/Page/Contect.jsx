@@ -1,10 +1,5 @@
 import { FaArrowRightLong, FaLocationDot, FaWhatsapp } from "react-icons/fa6";
-import {
-  FaEnvelope,
-  FaPhone,
-  FaFacebook,
-  FaLinkedin,
-} from "react-icons/fa";
+import { FaEnvelope, FaPhone, FaFacebook, FaLinkedin } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import Swal from "sweetalert2";
@@ -58,6 +53,7 @@ export default function Contect() {
               FULL NAME <span className="text-red-500">*</span>
             </label>
             <input
+              required
               type="text"
               id="fullName"
               name="from_name"
@@ -75,6 +71,7 @@ export default function Contect() {
               EMAIL ADDRESS <span className="text-red-500">*</span>
             </label>
             <input
+              required
               name="from_email"
               type="email"
               id="email"
@@ -92,6 +89,7 @@ export default function Contect() {
               MESSAGE <span className="text-red-500">*</span>
             </label>
             <textarea
+              required
               name="message"
               id="message"
               rows="4"
