@@ -172,11 +172,12 @@ export default function Contect() {
               <div className="flex space-x-6 mt-6">
                 {/* Email */}
                 <a
-                  href="mailto:masiurislam28@email.com"
+                  href="mailto:masiurislam28@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="text-3xl text-red-500 hover:text-red-600 transition duration-300"
                 >
-                  <FaEnvelope className="text-red-500 text-3xl cursor-pointer hover:text-red-600 transition" />
+                  <FaEnvelope />
                 </a>
 
                 {/* WhatsApp */}

@@ -14,9 +14,9 @@ export default function Projects() {
       </p>
 
       <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 px-3">
-        <div className="mx-auto bg-white rounded-lg shadow-lg overflow-hidden mb-8 md:mb-0 flex flex-col">
+        <div className="mx-auto group bg-white rounded-lg shadow-lg overflow-hidden mb-8 md:mb-0 flex flex-col">
           {/* Header Section */}
-          <div className="h-48 bg-cover bg-center">
+          <div className="h-48 bg-cover bg-center overflow-hidden">
             <img
               src={blog}
               alt="Project 1"
@@ -36,7 +36,7 @@ export default function Projects() {
             {/* Button */}
             <div className="mt-4">
               <Link
-                to="/productDetail"
+                to="project/productDetail"
                 className="px-6 py-3 bg-blue-200 rounded-md hover:bg-blue-400/70 transition duration-300 uppercase"
               >
                 VIEW DETAILS
@@ -45,9 +45,9 @@ export default function Projects() {
           </div>
         </div>
 
-        <div className="mx-auto bg-white rounded-lg shadow-lg overflow-hidden mb-8 md:mb-0 flex flex-col">
+        <div className="mx-auto group bg-white rounded-lg shadow-lg overflow-hidden mb-8 md:mb-0 flex flex-col">
           {/* Header Section */}
-          <div className="h-48 bg-cover bg-center">
+          <div className="h-48 bg-cover bg-center overflow-hidden">
             <img
               src={game}
               alt="Project 1"
@@ -65,7 +65,7 @@ export default function Projects() {
 
             <div className="mt-4">
               <Link
-                to="/productDetail2"
+                to="project/productDetail2"
                 className="px-6 py-3 bg-blue-200 rounded-md hover:bg-blue-400/70 transition duration-300 uppercase"
               >
                 VIEW DETAILS
@@ -74,8 +74,8 @@ export default function Projects() {
           </div>
         </div>
 
-        <div className="mx-auto bg-white rounded-lg shadow-lg overflow-hidden mb-8 md:mb-0 flex flex-col">
-          <div className="h-48 bg-cover bg-center">
+        <div className="mx-auto group bg-white rounded-lg shadow-lg overflow-hidden mb-8 md:mb-0 flex flex-col">
+          <div className="h-48 bg-cover bg-center overflow-hidden">
             <img
               src={bd_coupon}
               alt="Project 1"
@@ -93,7 +93,7 @@ export default function Projects() {
             {/* Button */}
             <div className="mt-4">
               <Link
-                to="/productDetail3"
+                to="project/productDetail3"
                 className="px-6 py-3 bg-blue-200 rounded-md hover:bg-blue-400/70 transition duration-300 uppercase"
               >
                 VIEW DETAILS
