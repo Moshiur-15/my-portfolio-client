@@ -15,7 +15,7 @@ export default function ProjectDetail2() {
 
       {/* Header */}
       <h1 className="text-4xl font-bold text-gray-800 mb-6">
-        Chill Gamer - Game Review Application
+        GameZone - Game Review Application
       </h1>
       <p className="text-xl text-gray-600 mb-8">
         Chill Gamer is a game review application designed to help gamers explore
@@ -104,33 +104,35 @@ export default function ProjectDetail2() {
       </div>
 
       {/* Call to Action */}
-      <div className="flex justify-between items-center mt-8 space-x-4">
-        <Link
-          to="/"
-          className="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
-        >
-          Back to Projects
-        </Link>
-
+      <div className="md:flex md:justify-between space-y-3 md:space-y-0">
+        <button className="w-full md:w-auto bg-blue-600 text-white hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105  px-8 py-4 rounded-lg ">
+          <Link to="/" className="">
+            Back to Projects
+          </Link>
+        </button>
         {/* Live Link Button */}
-        <a
-          href="https://game-review-me.netlify.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-green-500 text-white px-8 py-4 rounded-lg hover:bg-green-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
-        >
-          Live Link
-        </a>
+        <button className="w-full md:w-auto bg-green-500 text-white px-8 py-4 rounded-lg hover:bg-green-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+          <a
+            href="https://gamezone-me.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className=""
+          >
+            Live Link
+          </a>
+        </button>
 
         {/* View Code on GitHub Button */}
-        <a
-          href="https://github.com/programming-hero-web-course2/b10-a10-client-side-Moshiur-15"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-gray-800 text-white px-8 py-4 rounded-lg hover:bg-gray-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
-        >
-          View Code on GitHub
-        </a>
+        <button className="w-full md:w-auto bg-gray-800 text-white px-8 py-4 rounded-lg hover:bg-gray-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+          <a
+            href="https://github.com/Moshiur-15/Game-Review"
+            target="_blank"
+            rel="noopener noreferrer"
+            className=""
+          >
+            View code on GitHub
+          </a>
+        </button>
       </div>
     </div>
   );

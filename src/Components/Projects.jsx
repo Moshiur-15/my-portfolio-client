@@ -13,7 +13,7 @@ export default function Projects() {
         Here are a few projects I’ve worked on recently.
       </p>
 
-      <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 px-3">
+      <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 px-3 lg:px-0">
         <div className="mx-auto group bg-white rounded-lg shadow-lg overflow-hidden mb-8 md:mb-0 flex flex-col">
           {/* Header Section */}
           <div className="h-48 bg-cover bg-center overflow-hidden">
@@ -26,7 +26,7 @@ export default function Projects() {
 
           {/* Content Section */}
           <div className="p-6 flex flex-col justify-between flex-grow">
-            <h2 className="text-xl font-bold mb-2">Blog Website</h2>
+            <h2 className="text-xl font-bold mb-2">NextEra Blog</h2>
             <p className="text-gray-600">
               A responsive blog platform built with React, Firebase, and
               MongoDB, featuring authentication, blog creation, commenting, and
@@ -57,7 +57,7 @@ export default function Projects() {
 
           {/* Content Section */}
           <div className="p-6 flex flex-col justify-between flex-grow">
-            <h2 className="text-xl font-bold mb-2">Chill Gamer</h2>
+            <h2 className="text-xl font-bold mb-2">Game Zone</h2>
             <p className="text-gray-600">
               Chill Gamer is a game review app built with React, Firebase, and
               MongoDB, featuring user authentication, review submissions.

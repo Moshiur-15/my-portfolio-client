@@ -18,7 +18,7 @@ export default function NavBar() {
 
   return (
     <div className="bg-blue-100/60 py-3">
-      <div className="navbar container flex justify-between items-center mx-auto lg:px-48 p-0">
+      <div className="navbar container flex justify-between items-center mx-auto lg:px-[76px] xl:px-48 p-0">
         <div className="flex-1">
           <div className="dropdown dropdown-open">
             {/* Dropdown button */}
@@ -76,7 +76,7 @@ export default function NavBar() {
           <a
             rel="noopener noreferrer"
             target="_blank"
-            href="https://docs.google.com/document/d/1O8qYBtW6xMB6e-MjOk2ordtWH7QRk7i7kcrVBeqARBs/export?format=pdf&exportFormat=pdf"
+            href="https://drive.google.com/file/d/11AQ6lcRpU9M5D46XoRKyBMvid343MBUV/view?usp=sharing"
             className="font-semibold btn py-2 px-4 bg-blue-200/40 border-none text-base rounded-none uppercase"
           >
             Open RESUME

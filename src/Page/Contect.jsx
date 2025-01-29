@@ -11,7 +11,7 @@ export default function Contect() {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_etvjk7k", "template_62npc1b", form.current, {
+      .sendForm("service_i6me834", "template_2u1msrp", form.current, {
         publicKey: "3eOT6dB9zWU0c1M1F",
       })
       .then(

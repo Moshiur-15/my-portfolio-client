@@ -7,16 +7,16 @@ import Contect from "./Contect";
 export default function Home() {
   return (
     <div className="font-roboto">
-      <section id="hero">
+      <section id="hero" className="xl:mx-[115px]">
         <Hero />
       </section>
-      <section id="about">
+      <section id="about" className="xl:mx-[115px]">
         <About />
       </section>
-      <section id="skills">
+      <section id="skills" className="xl:mx-[100px]">
         <Skills />
       </section>
-      <section id="projects">
+      <section id="projects" className="xl:mx-[105px]">
         <Projects />
       </section>
       <section id="contact" className="lg:mb-44">

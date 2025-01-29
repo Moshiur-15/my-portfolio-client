@@ -48,7 +48,7 @@ export default function Hero() {
           </div>
 
           {/* Resume Button */}
-          <a rel="noopener noreferrer" target="_blank" href="https://docs.google.com/document/d/1O8qYBtW6xMB6e-MjOk2ordtWH7QRk7i7kcrVBeqARBs/export?format=pdf&exportFormat=pdf" className="mt-8 px-6 py-3 bg-blue-200 rounded-md font-semibold hover:bg-blue-400/70 transition duration-300 uppercase">
+          <a rel="noopener noreferrer" target="_blank" href="https://drive.google.com/file/d/11AQ6lcRpU9M5D46XoRKyBMvid343MBUV/view?usp=sharing" className="mt-8 px-6 py-3 bg-blue-200 rounded-md font-semibold hover:bg-blue-400/70 transition duration-300 uppercase">
             open RESUME
           </a>
         </div>
