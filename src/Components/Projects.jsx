@@ -37,7 +37,7 @@ export default function Projects() {
             <div className="mt-4">
               <Link
                 to="project/productDetail"
-                className="px-6 py-3 bg-blue-200 rounded-md hover:bg-blue-400/70 transition duration-300 uppercase"
+                className="px-6 py-3 bg-slate-600 hover:bg-slate-700 text-white rounded-md hover:bg-blue-400/70 transition duration-300 uppercase"
               >
                 VIEW DETAILS
               </Link>
@@ -66,7 +66,7 @@ export default function Projects() {
             <div className="mt-4">
               <Link
                 to="project/productDetail2"
-                className="px-6 py-3 bg-blue-200 rounded-md hover:bg-blue-400/70 transition duration-300 uppercase"
+                className="px-6 py-3 bg-slate-600 hover:bg-slate-700 text-white rounded-md hover:bg-blue-400/70 transition duration-300 uppercase"
               >
                 VIEW DETAILS
               </Link>
@@ -94,7 +94,7 @@ export default function Projects() {
             <div className="mt-4">
               <Link
                 to="project/productDetail3"
-                className="px-6 py-3 bg-blue-200 rounded-md hover:bg-blue-400/70 transition duration-300 uppercase"
+                className="px-6 py-3 bg-slate-600 hover:bg-slate-700 text-white rounded-md hover:bg-blue-400/70 transition duration-300 uppercase"
               >
                 VIEW DETAILS
               </Link>
