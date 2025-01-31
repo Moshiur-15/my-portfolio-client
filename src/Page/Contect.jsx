@@ -1,14 +1,17 @@
 import { FaArrowRightLong, FaLocationDot, FaWhatsapp } from "react-icons/fa6";
 import { FaEnvelope, FaPhone, FaFacebook, FaLinkedin } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import Swal from "sweetalert2";
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
 export default function Contect() {
   const form = useRef();
+  const [loading, setLoading] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setLoading(true);
 
     emailjs
       .sendForm("service_i6me834", "template_2u1msrp", form.current, {
@@ -19,6 +22,7 @@ export default function Contect() {
           console.log("SUCCESS!");
           console.log(res);
           form.current.reset();
+          setLoading(false);
           Swal.fire({
             title: "Message Sent!",
             text: "Your message has been successfully sent.",
@@ -32,7 +36,7 @@ export default function Contect() {
   };
 
   return (
-    <section className="py-12 px-2">
+    <section className="py-12">
       <h2 className="text-4xl uppercase font-bold text-gray-800 text-center mb-16">
         Contact Me
       </h2>
@@ -42,7 +46,7 @@ export default function Contect() {
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="p-10 rounded-lg shadow-lg bg-blue-50 h-full"
+          className="p-10 rounded h-full flex-grow flex flex-col  bg-gray-100/70 md:mx-10 lg:mx-0"
         >
           {/* Full Name */}
           <div className="mb-6">
@@ -92,7 +96,7 @@ export default function Contect() {
               required
               name="message"
               id="message"
-              rows="4"
+              rows="6"
               placeholder="Write your message here..."
               className="w-full px-4 py-3 rounded-lg bg-gray-200  placeholder-gray-400 border border-gray-600 focus:outline-none border-none"
             ></textarea>
@@ -102,17 +106,23 @@ export default function Contect() {
           <button
             type="submit"
             value="Send"
-            className="w-full font-medium py-4 border border-blue-300 rounded-full shadow-lg flex items-center justify-center gap-2"
+            className="mt-auto hover:border-transparent w-full font-medium py-4 border border-blue-300 rounded-full shadow-lg  bg-blue-50"
           >
-            <span>SEND MESSAGE</span>
-            <span>
-              <FaArrowRightLong />
-            </span>
+            {loading ? (
+              <AiOutlineLoading3Quarters className="animate-spin mx-auto text-3xl" />
+            ) : (
+              <div className="flex items-center justify-center gap-2">
+                <span>SEND MESSAGE</span>
+                <span>
+                  <FaArrowRightLong />
+                </span>
+              </div>
+            )}
           </button>
         </form>
 
         {/* right side */}
-        <section className="p-10 rounded-lg shadow-lg bg-blue-50 h-full">
+        <section className="p-10 md:mx-10 lg:mx-0 rounded bg-gray-100/70 h-full">
           <h2 className="text-4xl font-bold text-center text-gray-800 mb-8">
             GET IN TOUCH
           </h2>
@@ -200,7 +210,7 @@ export default function Contect() {
 
                 {/* LinkedIn */}
                 <a
-                  href="https://www.linkedin.com/feed/"
+                  href="https://www.linkedin.com/in/moshiur-islam28/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
